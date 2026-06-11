@@ -1,11 +1,41 @@
 {
-  "mcpServers": {
-    "server-name": {
-      "command": "executable",
-      "args": ["arg1", "arg2"],
-      "env": {
-        "VAR": "value"
+  "server": {
+    "name": "com.atlassian/remote-mcp-server",
+    "description": "Official Atlassian Remote MCP Server providing access to Jira and Confluence via the Model Context Protocol.",
+    "title": "Atlassian Remote MCP Server",
+    "version": "1.1.0",
+    "websiteUrl": "https://developer.atlassian.com/cloud/jira/platform/mcp/",
+    "repository": {
+      "url": "https://bitbucket.org/atlassian/atlassian-mcp",
+      "source": "bitbucket",
+      "id": null,
+      "subfolder": null
+    },
+    "icons": [
+      {
+        "uri": "https://wac-cdn.atlassian.com/assets/img/favicons/atlassian/favicon.png",
+        "type": "image/png",
+        "width": 32,
+        "height": 32
       }
+    ],
+    "packages": null,
+    "remotes": [
+      {
+        "transportType": "http",
+        "url": "https://mcp.atlassian.com/v1/mcp/authv2"
+      }
+    ],
+    "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json"
+  },
+  "_meta": {
+    "io.modelcontextprotocol.registry/official": {
+      "status": "active",
+      "statusMessage": null,
+      "publishedAt": null,
+      "updatedAt": null,
+      "isLatest": true
     }
   }
 }
+ 
